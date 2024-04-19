@@ -1,0 +1,121 @@
+.recommended-friends {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+  padding: 25px 0;
+  margin: 25px 0;
+  color: var(--gray-color);
+}
+
+.recommended-friends__title {
+  font-size: 14px;
+}
+
+.recommended-friends span {
+  margin: 90px 0;
+  display: block;
+  text-align: center;
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray-color);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.open-chat__post {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: var(--main-border);
+}
+
+.open-chat__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.open-chat__title {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.open-chat__hashtags {
+  text-transform: uppercase;
+  color: var(--gray-color);
+  font-size: 14px;
+}
+
+.open-chat__members {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.open-chat__members img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-chat__members-count {
+  color: var(--gray-color);
+}
+
+.open-chat__members .divider {
+  width: 1px;
+  height: 100%;
+  background-color: var(--gray-color);
+  margin: 0 5px;
+}
+
+.open-chat__members-status {
+  color: #ffb0e0;
+}
+
+.open-chat__image {
+  position: relative;
+}
+
+.open-chat__image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.open-chat__likes {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+
+.open-chat__likes span {
+  margin-left: 5px;
+}
+
+@keyframes heartBeat {
+  0% {
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+  }
+}
+
+.open-chat__likes:hover i {
+  will-change: transform; /* tells browser that there will be changes in animation -> accelerates GPU usage? */
+  animation: heartBeat 1s linear infinite;
+}
